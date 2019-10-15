@@ -1,6 +1,27 @@
 <resources>
-    <string name="app_name">second</string>
-    <string name="str1">Hello</string>
-    <string name="str2">Input Ur Name</string>
-    <string name="btn1">OK</string>
+    <string name="app_name">Hello</string>
+    <string name="hello">Hello</string>
+    <string name="input">Please input here...</string>
+    <string name="ok">OK</string>
+
+    <string name="app_name2">Calculagraph</string>
+    <string name="show_score">0</string>
+    <string name="score1">+3 points</string>
+    <string name="score2">+2 points</string>
+    <string name="score3">+1 points</string>
+    <string name="team1">Sichuan University</string>
+    <string name="team2">Swufe</string>
+    <string name="socre_reset">RESET</string>
+
+    <string name="app_name3">Exchange_rate</string>
+    <string name="rate_usa">Dollar</string>
+    <string name="openOne">Open another page</string>
+    <string name="change_rate">CHANGE_RATE</string>
+    <string name="rate_euro">Euro</string>
+    <string name="won">Won</string>
+
+
+    <string name="title_activity_calculagraph">calculagraph</string>
+    <string name="title_activity_exchange_rate">exchange_rate</string>
+    <string name="label_open_list">OpenList</string>
 </resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:background="@mipmap/exchange"
+    android:orientation="vertical"
+
+    tools:context=".ExchangeRate">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:text="@string/input"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+    <TextView
+        android:id="@+id/change_rate"
+        android:layout_width="371dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:text="@string/change_rate"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+    <Button
+        android:id="@+id/dollar"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#AD693333"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/rate_usa"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/euro"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#AD693333"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/rate_euro"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/won"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#AD693333"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/won"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="#AD693333"
+        android:gravity="center"
+        android:onClick="openOne"
+        android:text="@string/openOne"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
