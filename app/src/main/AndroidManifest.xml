@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.roxy.second"
     android:targetSandboxVersion="1">
-
+    <uses-permission  android:name = "android.permission.GET_TASKS"/>
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,7 +13,8 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MyList2"></activity>
         <activity android:name=".MyList">
             <intent-filter>

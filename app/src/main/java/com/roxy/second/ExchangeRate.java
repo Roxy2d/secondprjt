@@ -72,14 +72,14 @@ public class ExchangeRate extends AppCompatActivity implements Runnable {
 
         Log.i(TAG, "onCreate:sp updateDate="+updateDate);
         Log.i(TAG, "onCreate:sp todatStr="+todayStr);
-        
-        
-        //判断时间
-        if(todayStr.equals(updateDate)){
-            //开启子线程
 
+
+        //判断时间
+        if(todayStr. equals(updateDate)){
+            //开启子线程
             Thread t = new Thread(this);
             t.start();
+
         }else{
             Log.i(TAG, "onCreate: 不需要更新");
         }
@@ -237,10 +237,10 @@ public class ExchangeRate extends AppCompatActivity implements Runnable {
          //用于保存获取的汇率
         Bundle bundle;
 
-
         //获取网络数据
+     /*
 
-        /*URL url = null;
+        URL url = null;
         try {
             url = new URL("http://www.usd-cny.com/icbc.htm");
             HttpURLConnection http = (HttpURLConnection) url.openConnection();
@@ -255,12 +255,11 @@ public class ExchangeRate extends AppCompatActivity implements Runnable {
 
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
-
-        bundle=getFromBOC();
-
+        }
+*/
 
         //bundle中保存获取的汇率
+        bundle=getFromBOC();
 
         //获取Msg对象，用于返回主线程
         Message msg = handler.obtainMessage(5);
@@ -280,7 +279,7 @@ public class ExchangeRate extends AppCompatActivity implements Runnable {
         Bundle bundle=new Bundle();
         Document doc = null;
         try {
-            doc = Jsoup.connect("http://www.boc.cn/sourcedb/whpj/").get();
+            doc = Jsoup.connect("http://www.usd-cny.com/icbc.htm").get();
             //doc=Jsoup.parse(html);
             Log.i(TAG, "run:" + doc.title());
 
@@ -334,7 +333,7 @@ public class ExchangeRate extends AppCompatActivity implements Runnable {
         Bundle bundle=new Bundle();
         Document doc = null;
         try {
-            doc = Jsoup.connect("http://www.usd-cny.com/icbc.htm").get();
+            doc = Jsoup.connect("http://www.boc.cn/sourcedb/whpj/").get();
             //doc=Jsoup.parse(html);
             Log.i(TAG, "run:" + doc.title());
 
